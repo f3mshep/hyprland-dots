@@ -1,0 +1,6 @@
+2024-12-03 07:44:31.109 [info] Started local extension host with pid 35112.
+2024-12-03 07:44:34.408 [info] [perf] Render performance baseline is 118ms
+2024-12-03 08:21:22.445 [error] spawn truecolor ENOENT: Error: spawn truecolor ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)

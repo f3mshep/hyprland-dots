@@ -1,0 +1,56 @@
+2024-12-02 23:26:13.481 [info] [main] Log level: Info
+2024-12-02 23:26:13.481 [info] [main] Validating found git in: "git"
+2024-12-02 23:26:13.481 [info] [main] Using git "2.47.1" from "git"
+2024-12-02 23:26:13.481 [info] [Model][doInitialScan] Initial repository scan started
+2024-12-02 23:26:13.481 [info] > git rev-parse --show-toplevel [12ms]
+2024-12-02 23:26:13.481 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-02 23:26:13.481 [info] > git rev-parse --show-toplevel [10ms]
+2024-12-02 23:26:13.482 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-12-02 23:26:13.492 [info] [Model][openRepository] Opened repository: /home/alex/citytheme/.config
+2024-12-02 23:26:13.494 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-12-02 23:26:13.501 [info] > git config --get commit.template [2ms]
+2024-12-02 23:26:13.507 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-12-02 23:26:13.512 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/alex/citytheme/.config/.git/refs/remotes/origin/main'
+2024-12-02 23:26:13.514 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-12-02 23:26:13.527 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-12-02 23:26:13.575 [info] > git rev-parse --show-toplevel [1ms]
+2024-12-02 23:26:13.575 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-02 23:26:13.614 [info] > git rev-parse --show-toplevel [1ms]
+2024-12-02 23:26:13.614 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-02 23:26:13.706 [info] > git status -z -uall [187ms]
+2024-12-02 23:26:13.722 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2024-12-02 23:26:13.727 [info] > git config --get commit.template [5ms]
+2024-12-02 23:26:13.729 [info] > git config --local branch.main.vscode-merge-base [3ms]
+2024-12-02 23:26:13.787 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [50ms]
+2024-12-02 23:26:13.787 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [54ms]
+2024-12-02 23:26:13.832 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/alex/citytheme/.config/.git/refs/remotes/origin/main'
+2024-12-02 23:26:13.833 [info] > git merge-base refs/heads/main refs/remotes/origin/main [37ms]
+2024-12-02 23:26:13.847 [info] > git diff --name-status -z --diff-filter=ADMR 491b1cf8744d0abd81d54b2644d90cfa8c7708bc...refs/remotes/origin/main [4ms]
+2024-12-02 23:26:13.848 [info] > git rev-parse refs/remotes/origin/main [16ms]
+2024-12-02 23:26:13.888 [info] > git show --textconv :kitty/kitty.conf [11ms]
+2024-12-02 23:26:13.890 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [27ms]
+2024-12-02 23:26:13.893 [info] > git ls-files --stage -- /home/alex/citytheme/.config/kitty/kitty.conf [7ms]
+2024-12-02 23:26:13.906 [info] > git cat-file -s f504bfaa0fc50bde1e230abd1c6de81ea67b316b [4ms]
+2024-12-02 23:26:14.046 [info] > git check-ignore -v -z --stdin [6ms]
+2024-12-02 23:26:14.232 [info] > git status -z -uall [376ms]
+2024-12-02 23:26:14.902 [info] > git rev-parse --show-toplevel [4ms]
+2024-12-02 23:26:14.902 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-12-02 23:26:41.118 [info] > git show --textconv :.dracula.sh [6ms]
+2024-12-02 23:26:41.120 [info] > git ls-files --stage -- /home/alex/citytheme/.config/.dracula.sh [1ms]
+2024-12-02 23:26:41.128 [info] > git cat-file -s c9d30902f8e3b65321f4f57df73ed5fb8b7e6860 [3ms]
+2024-12-02 23:27:05.801 [info] > git check-ignore -v -z --stdin [4ms]
+2024-12-02 23:27:35.301 [info] > git check-ignore -v -z --stdin [5ms]
+2024-12-02 23:27:42.361 [info] > git check-ignore -v -z --stdin [4ms]
+2024-12-02 23:27:47.650 [info] > git check-ignore -v -z --stdin [5ms]
+2024-12-02 23:30:57.293 [info] > git show --textconv :kitty/confbase.conf [12ms]
+2024-12-02 23:30:57.297 [info] > git ls-files --stage -- /home/alex/citytheme/.config/kitty/confbase.conf [5ms]
+2024-12-02 23:30:57.309 [info] > git cat-file -s 24fac56a645db5c24791e191b39991aebdae9426 [3ms]
+2024-12-02 23:31:00.186 [info] > git show --textconv :kitty/kitty.conf [16ms]
+2024-12-02 23:31:00.190 [info] > git ls-files --stage -- /home/alex/citytheme/.config/kitty/kitty.conf [5ms]
+2024-12-02 23:31:00.203 [info] > git cat-file -s f504bfaa0fc50bde1e230abd1c6de81ea67b316b [3ms]
+2024-12-02 23:31:56.358 [info] > git show --textconv :kitty/confbase.conf [18ms]
+2024-12-02 23:31:56.363 [info] > git ls-files --stage -- /home/alex/citytheme/.config/kitty/confbase.conf [6ms]
+2024-12-02 23:31:56.382 [info] > git cat-file -s 24fac56a645db5c24791e191b39991aebdae9426 [4ms]
+2024-12-02 23:32:10.425 [info] > git show --textconv :gtk-3.0/bookmarks [15ms]
+2024-12-02 23:32:10.428 [info] > git ls-files --stage -- /home/alex/citytheme/.config/gtk-3.0/bookmarks [4ms]
+2024-12-02 23:32:10.444 [info] > git cat-file -s 081a28cd4fa2bc4fc9dcb1637a2acdd0ee741d7a [4ms]
